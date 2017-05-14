@@ -17,4 +17,5 @@ from openstack_auth.plugin.token import *  # noqa
 
 __all__ = ['BasePlugin',
            'PasswordPlugin',
-           'TokenPlugin']
+           'TokenPlugin',
+           'TotpPlugin']
