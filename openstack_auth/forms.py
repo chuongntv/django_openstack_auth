@@ -52,11 +52,14 @@ class Login(django_auth_forms.AuthenticationForm):
         label=_("User Name"),
         widget=forms.TextInput(attrs={"autofocus": "autofocus"}))
     password = forms.CharField(label=_("Password"),
-                               widget=forms.PasswordInput(render_value=False))
+                               widget=forms.PasswordInput(render_value=False)),
+    passcode = forms.CharField(
+        label=_("Passcode"),
+        widget=forms.TextInput())
 
     def __init__(self, *args, **kwargs):
         super(Login, self).__init__(*args, **kwargs)
-        fields_ordering = ['username', 'password', 'region']
+        fields_ordering = ['username', 'password', 'passcode', 'region']
         if getattr(settings,
                    'OPENSTACK_KEYSTONE_MULTIDOMAIN_SUPPORT',
                    False):
@@ -67,7 +70,7 @@ class Login(django_auth_forms.AuthenticationForm):
                 required=True,
                 widget=forms.TextInput(attrs={"autofocus": "autofocus"}))
             self.fields['username'].widget = forms.widgets.TextInput()
-            fields_ordering = ['domain', 'username', 'password', 'region']
+            fields_ordering = ['domain', 'username', 'password', 'passcode', 'region']
         self.fields['region'].choices = self.get_region_choices()
         if len(self.fields['region'].choices) == 1:
             self.fields['region'].initial = self.fields['region'].choices[0][0]
