@@ -55,7 +55,8 @@ class Login(django_auth_forms.AuthenticationForm):
                                widget=forms.PasswordInput(render_value=False)),
     passcode = forms.CharField(
         label=_("Passcode"),
-        widget=forms.TextInput())
+        widget=forms.TextInput(),
+        required=False)
 
     def __init__(self, *args, **kwargs):
         super(Login, self).__init__(*args, **kwargs)
