@@ -15,8 +15,8 @@
 
 import datetime
 import logging
-import pytz
 
+import pytz
 from django.conf import settings
 from django.utils.module_loading import import_string  # noqa
 from django.utils.translation import ugettext_lazy as _
@@ -26,9 +26,7 @@ from openstack_auth import exceptions
 from openstack_auth import user as auth_user
 from openstack_auth import utils
 
-
 LOG = logging.getLogger(__name__)
-
 
 KEYSTONE_CLIENT_ATTR = "_keystoneclient"
 
@@ -45,9 +43,9 @@ class KeystoneBackend(object):
             plugins = getattr(
                 settings,
                 'AUTHENTICATION_PLUGINS',
-                ['openstack_auth.plugin.password.PasswordPlugin',
-                 'openstack_auth.plugin.token.TokenPlugin',
-                 'openstack_auth.plugin.totp.TotpPlugin'])
+                ['openstack_auth.plugin.totp.TotpPlugin',
+                 'openstack_auth.plugin.password.PasswordPlugin',
+                 'openstack_auth.plugin.token.TokenPlugin'])
 
             self._auth_plugins = [import_string(p)() for p in plugins]
 
@@ -74,7 +72,7 @@ class KeystoneBackend(object):
         to make the ``request`` object available to the auth backend class.
         """
         if (hasattr(self, 'request') and
-                user_id == self.request.session["user_id"]):
+                    user_id == self.request.session["user_id"]):
             token = self.request.session['token']
             endpoint = self.request.session['region_endpoint']
             services_region = self.request.session['services_region']
@@ -227,7 +225,7 @@ class KeystoneBackend(object):
         # which may or may not be the default depending upon the order
         # keystone uses
         region_name = None
-        id_endpoints = scoped_auth_ref.service_catalog.\
+        id_endpoints = scoped_auth_ref.service_catalog. \
             get_endpoints(service_type='identity')
         for id_endpoint in [cat for cat in id_endpoints['identity']]:
             if auth_url in id_endpoint.values():
