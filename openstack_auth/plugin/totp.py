@@ -14,7 +14,6 @@ import logging
 
 from keystoneauth1.identity import v3 as v3_auth
 
-from openstack_auth import utils
 from openstack_auth.plugin import base
 
 LOG = logging.getLogger(__name__)
@@ -30,9 +29,9 @@ class TotpPlugin(base.BasePlugin):
     authentication.
     """
 
-    def get_plugin(self, auth_url=None, username=None, passcode=None,
+    def get_plugin(self, auth_url=None, username=None, password=None, passcode=None,
                    user_domain_name=None, **kwargs):
-        if not all((auth_url, username)):
+        if not all((auth_url, username, password)):
             return None
 
         LOG.debug('Attempting to authenticate with totp for %s', username)
@@ -40,5 +39,6 @@ class TotpPlugin(base.BasePlugin):
         return v3_auth.TOTP(auth_url=auth_url,
                             username=username,
                             passcode=passcode,
+                            password=password,
                             user_domain_name=user_domain_name,
                             unscoped=True)
