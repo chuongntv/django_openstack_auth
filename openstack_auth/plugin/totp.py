@@ -32,14 +32,13 @@ class TotpPlugin(base.BasePlugin):
 
     def get_plugin(self, auth_url=None, username=None, passcode=None,
                    user_domain_name=None, **kwargs):
-        if not all((auth_url, username, passcode)):
+        if not all((auth_url, username)):
             return None
 
-        LOG.debug('Attempting to authenticate for %s', username)
+        LOG.debug('Attempting to authenticate with totp for %s', username)
 
-        if utils.get_keystone_version() >= 3:
-            return v3_auth.TOTP(auth_url=auth_url,
-                                username=username,
-                                passcode=passcode,
-                                user_domain_name=user_domain_name,
-                                unscoped=True)
+        return v3_auth.TOTP(auth_url=auth_url,
+                            username=username,
+                            passcode=passcode,
+                            user_domain_name=user_domain_name,
+                            unscoped=True)

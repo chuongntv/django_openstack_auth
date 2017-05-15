@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2c7e04-98c0-4ad4-86d6-9d8ef0d8d2ea" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/django_openstack_auth.iml" afterPath="$PROJECT_DIR$/.idea/django_openstack_auth.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openstack_auth/backend.py" afterPath="$PROJECT_DIR$/openstack_auth/backend.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openstack_auth/plugin/totp.py" afterPath="$PROJECT_DIR$/openstack_auth/plugin/totp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="backend.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="backend.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openstack_auth/backend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-218">
-              <caret line="96" column="42" lean-forward="true" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+            <state relative-caret-position="165">
+              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="e#623#638#0" expanded="true" />
               </folding>
@@ -37,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="password.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="password.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/password.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="244">
+              <caret line="48" column="54" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="48" selection-end-column="54" />
               <folding>
                 <element signature="e#546#560#0" expanded="true" />
               </folding>
@@ -49,11 +51,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files/Python27/Lib/site-packages/keystoneauth1/exceptions/auth.py">
+      <file leaf-file-name="totp.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/keystoneauth1/identity/v3/totp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="68">
+              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../openstack/python-keystoneclient/build/lib.linux-x86_64-2.7/keystoneclient/auth/identity/v3/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="141" column="37" lean-forward="false" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="totp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/totp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openstack_auth/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -79,12 +111,10 @@
       <find>Attemp</find>
       <find>Attempte</find>
       <find>Attempted</find>
-      <find>Attempted</find>
       <find>Attempted to</find>
       <find>Attempted t</find>
       <find>Re</find>
       <find>Reques</find>
-      <find>Request</find>
       <find>Request</find>
       <find>Request re</find>
       <find>Request ret</find>
@@ -93,6 +123,8 @@
       <find>Request return</find>
       <find>Attemptcat &quot;&quot; &gt;</find>
       <find>PasswordPlugin</find>
+      <find>https://github.com/chuongntv/django_openstack_auth.git</find>
+      <find>Unable</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,10 +133,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/openstack_auth/plugin/totp.py" />
         <option value="$PROJECT_DIR$/openstack_auth/plugin/__init__.py" />
         <option value="$PROJECT_DIR$/openstack_auth/forms.py" />
         <option value="$PROJECT_DIR$/openstack_auth/backend.py" />
+        <option value="$PROJECT_DIR$/openstack_auth/plugin/totp.py" />
       </list>
     </option>
   </component>
@@ -115,10 +147,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1592" />
-    <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="y" value="30" />
+    <option name="width" value="1366" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -135,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,13 +214,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../keystoneauth" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -305,6 +336,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -365,7 +402,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1456" height="876" extended-state="0" />
+    <frame x="0" y="30" width="1366" height="738" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -373,8 +410,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25358167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34590164" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25757575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -408,11 +445,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/openstack_auth/forms.py">
+    <entry file="file://$PROJECT_DIR$/openstack_auth/backend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#623#638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/token.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#546#560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openstack_auth/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -442,35 +506,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/Python27/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python27/Lib/site-packages/django/contrib/auth/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openstack_auth/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1593">
-          <caret line="334" column="25" lean-forward="false" selection-start-line="334" selection-start-column="4" selection-end-line="334" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Program Files/Python27/Lib/site-packages/django/contrib/auth/__init__.py" />
+    <entry file="file://D:/Program Files/Python27/Lib/site-packages/django/contrib/auth/forms.py" />
     <entry file="file://$PROJECT_DIR$/openstack_auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-98">
           <caret line="132" column="28" lean-forward="false" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -478,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,15 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/totp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -510,18 +541,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="191" column="34" lean-forward="true" selection-start-line="191" selection-start-column="34" selection-end-line="191" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/Python27/Lib/site-packages/keystoneauth1/exceptions/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Program Files/Python27/Lib/site-packages/keystoneauth1/exceptions/auth.py" />
     <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/token.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -530,22 +553,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/password.py">
+    <entry file="file://$PROJECT_DIR$/openstack_auth/backend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="165">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
-            <element signature="e#546#560#0" expanded="true" />
+            <element signature="e#623#638#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openstack_auth/backend.py">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keystoneauth1/identity/v3/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="96" column="42" lean-forward="true" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keystoneauth1/identity/v3/password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keystoneclient/v3/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openstack_auth/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../openstack/python-keystoneclient/build/lib.linux-x86_64-2.7/keystoneclient/auth/identity/v3/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="141" column="37" lean-forward="false" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/totp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keystoneclient/auth/identity/v3/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="142" column="43" lean-forward="false" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keystoneauth1/identity/v3/totp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openstack_auth/plugin/password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="48" column="54" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="48" selection-end-column="54" />
           <folding>
-            <element signature="e#623#638#0" expanded="true" />
+            <element signature="e#546#560#0" expanded="true" />
           </folding>
         </state>
       </provider>
