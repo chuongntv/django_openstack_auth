@@ -17,8 +17,8 @@
       <file leaf-file-name="backend.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openstack_auth/backend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="53">
+              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding>
                 <element signature="e#623#638#0" expanded="true" />
               </folding>
@@ -72,13 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>password</find>
-      <find>'</find>
-      <find>'password</find>
-      <find>'password'</find>
-      <find>methods</find>
-      <find>to</find>
-      <find>tok</find>
       <find>/tokens</find>
       <find>tokens</find>
       <find>AuthorizationF</find>
@@ -102,6 +95,13 @@
       <find>PasswordPlugin</find>
       <find>https://github.com/chuongntv/django_openstack_auth.git</find>
       <find>Unable</find>
+      <find>settings</find>
+      <find>settings.DE</find>
+      <find>settings.DEB</find>
+      <find>settings.DEBU</find>
+      <find>DE</find>
+      <find>DEBU</find>
+      <find>DEBUG</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -414,7 +414,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/openstack_auth/backend.py</url>
-          <line>78</line>
+          <line>85</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -454,6 +454,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -496,6 +497,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openstack_auth/backend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="53">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
             <element signature="e#623#638#0" expanded="true" />
           </folding>
