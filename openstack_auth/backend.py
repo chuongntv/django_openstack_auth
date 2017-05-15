@@ -40,7 +40,7 @@ class KeystoneBackend(object):
     @property
     def auth_plugins(self):
         if self._auth_plugins is None:
-            if settings.TOTP == 'True':
+            if settings.TOTP:
                 plugins = getattr(
                     settings,
                     'AUTHENTICATION_PLUGINS',
