@@ -13,6 +13,7 @@
 from openstack_auth.plugin.base import *  # noqa
 from openstack_auth.plugin.password import *  # noqa
 from openstack_auth.plugin.token import *  # noqa
+from openstack_auth.plugin.totp import *  # noqa
 
 
 __all__ = ['BasePlugin',

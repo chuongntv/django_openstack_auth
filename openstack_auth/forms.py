@@ -115,6 +115,7 @@ class Login(django_auth_forms.AuthenticationForm):
                                  'Default')
         username = self.cleaned_data.get('username')
         password = self.cleaned_data.get('password')
+        passcode = self.cleaned_data.get('passcode')
         region = self.cleaned_data.get('region')
         domain = self.cleaned_data.get('domain', default_domain)
 
@@ -126,6 +127,7 @@ class Login(django_auth_forms.AuthenticationForm):
             self.user_cache = authenticate(request=self.request,
                                            username=username,
                                            password=password,
+                                           passcode=passcode,
                                            user_domain_name=domain,
                                            auth_url=region)
             msg = 'Login successful for user "%(username)s".' % \
