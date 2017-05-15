@@ -39,7 +39,6 @@ class TotpPlugin(base.BasePlugin):
 
         return v3_auth.TOTP(auth_url=auth_url,
                             username=username,
-                            password=password,
                             passcode=passcode,
                             user_domain_name=user_domain_name,
                             unscoped=True)
