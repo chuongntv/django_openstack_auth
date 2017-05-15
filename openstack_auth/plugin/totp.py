@@ -30,9 +30,9 @@ class TotpPlugin(base.BasePlugin):
     authentication.
     """
 
-    def get_plugin(self, auth_url=None, username=None, password=None, passcode=None,
+    def get_plugin(self, auth_url=None, username=None, passcode=None,
                    user_domain_name=None, **kwargs):
-        if not all((auth_url, username, password)):
+        if not all((auth_url, username)):
             return None
 
         LOG.debug('Attempting to authenticate with totp for %s', username)
